@@ -1,0 +1,52 @@
+// ========================================
+// LOADER
+// ========================================
+
+.creative-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-creative);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-loader);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .paint-splash {
+    width: 100px;
+    height: 100px;
+    background: var(--primary);
+    border-radius: 80% 20% 70% 30% / 30% 70% 20% 80%;
+    animation: splash 2s ease-in-out infinite;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: var(--secondary);
+      border-radius: 60% 40% 50% 50% / 40% 50% 60% 50%;
+      animation: splash 2s ease-in-out infinite reverse;
+    }
+
+    &::before {
+      top: -20px;
+      left: -20px;
+    }
+
+    &::after {
+      bottom: -20px;
+      right: -20px;
+    }
+  }
+}

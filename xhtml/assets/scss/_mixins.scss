@@ -1,0 +1,79 @@
+// ========================================
+// MIXINS - UPDATED WITH desktop-xl
+// ========================================
+
+// Responsive Breakpoints
+@mixin mobile {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: 992px) {
+		@content;
+	}
+}
+
+// Add this missing mixin
+@mixin desktop-xl {
+	@media (min-width: 1400px) {
+		@content;
+	}
+}
+
+// Flexbox
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+// Grid
+@mixin grid($cols, $gap) {
+	display: grid;
+	grid-template-columns: repeat($cols, 1fr);
+	gap: $gap;
+}
+
+// Typography
+@mixin gradient-text {
+	background: var(--gradient-primary);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+// Effects
+@mixin glass-effect {
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid rgba(139, 92, 246, 0.1);
+}
+
+@mixin card-hover {
+	transition: all var(--transition-normal);
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: var(--shadow-lg);
+	}
+}

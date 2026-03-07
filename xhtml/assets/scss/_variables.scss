@@ -1,0 +1,68 @@
+// ========================================
+// VARIABLES - Global Design Tokens
+// ========================================
+
+:root {
+	// Colors - Vibrant Agency Palette
+	--primary: #8B5CF6; // Electric Purple
+	--primary-light: #A78BFA;
+	--primary-dark: #7C3AED;
+	--secondary: #EC4899; // Hot Pink
+	--secondary-light: #F472B6;
+	--secondary-dark: #DB2777;
+	--accent-1: #F59E0B; // Orange
+	--accent-2: #10B981; // Green
+	--accent-3: #3B82F6; // Blue
+
+	// Backgrounds
+	--bg-dark: #0F172A;
+	--bg-light: #FFFFFF;
+	--bg-creative: #FDF2F8; // Soft Pink
+	--bg-gray: #F8FAFC;
+	--bg-card: #FFFFFF;
+
+	// Text Colors
+	--text-dark: #1E293B;
+	--text-gray: #64748B;
+	--text-light: #94A3B8;
+	--text-white: #FFFFFF;
+
+	// Gradients
+	--gradient-primary: linear-gradient(135deg, var(--primary), var(--secondary));
+	--gradient-secondary: linear-gradient(135deg, var(--secondary), var(--accent-1));
+	--gradient-glow: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(236, 72, 153, 0.2));
+
+	// Shadows
+	--shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+	--shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+	--shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+	--shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+	// Border Radius
+	--radius-sm: 8px;
+	--radius-md: 12px;
+	--radius-lg: 16px;
+	--radius-xl: 24px;
+	--radius-2xl: 32px;
+	--radius-full: 9999px;
+
+	// Typography
+	--font-display: 'Clash Display', sans-serif;
+	--font-primary: 'Inter', sans-serif;
+	--font-accent: 'Sentient', serif;
+
+	// Transitions
+	--transition-fast: 0.2s ease;
+	--transition-normal: 0.3s ease;
+	--transition-slow: 0.5s ease;
+
+	// Z-index
+	--z-below: -1;
+	--z-normal: 1;
+	--z-above: 10;
+	--z-dropdown: 100;
+	--z-sticky: 200;
+	--z-fixed: 300;
+	--z-modal: 400;
+	--z-loader: 9999;
+}

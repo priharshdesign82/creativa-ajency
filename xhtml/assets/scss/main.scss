@@ -1,0 +1,41 @@
+// ========================================
+// CREATIVA - MAIN SCSS
+// All styles are imported from partials
+// ========================================
+
+// ------------------------------------------------------------------
+// ABSTRACTS - No CSS output, only variables and helpers
+// ------------------------------------------------------------------
+@import 'variables';      // Colors, fonts, shadows, etc.
+@import 'mixins';          // Flex, grid, responsive mixins
+
+// ------------------------------------------------------------------
+// BASE - Core styles that apply everywhere
+// ------------------------------------------------------------------
+@import 'reset';                // Remove browser defaults
+@import 'typography';           // Headings, paragraphs, text styles
+@import 'animations';            // Global animations (float, pulse, etc.)
+@import 'global';                // Body, container, utility classes
+
+// ------------------------------------------------------------------
+// COMPONENTS - Reusable UI elements
+// ------------------------------------------------------------------
+@import 'buttons';         // All button styles
+@import 'navbar';          // Navigation bar
+@import 'loader';          // Page loader
+@import 'footer';           // Footer styles
+
+// ------------------------------------------------------------------
+// PAGES - Individual page styles
+// ------------------------------------------------------------------
+@import 'home';                 // Home page
+@import 'work';                  // Portfolio/work page
+@import 'services';              // Services page
+@import 'team';                  // Team page
+@import 'pricing';               // Pricing page
+@import 'contact';               // Contact page
+@import 'testimonials';               // Testimonials page
+
+// ========================================
+// End of imports
+// ========================================

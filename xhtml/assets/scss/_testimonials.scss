@@ -1,0 +1,336 @@
+// ========================================
+// TESTIMONIALS PAGE SPECIFIC STYLES
+// ========================================
+
+// Page Header (using global page-header)
+.page-header {
+  padding: 180px 0 60px;
+  background: linear-gradient(135deg, var(--bg-creative) 0%, white 100%);
+  text-align: center;
+
+  .page-header-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .page-badge {
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      background: rgba(139, 92, 246, 0.1);
+      border-radius: var(--radius-full);
+      color: var(--primary);
+      font-weight: 500;
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--text-gray);
+      font-size: 1.125rem;
+    }
+  }
+}
+
+// Featured Testimonial
+.featured-testimonial {
+  padding: 60px 0 40px;
+
+  .featured-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 4rem;
+    border-radius: var(--radius-2xl);
+    position: relative;
+    overflow: hidden;
+    color: white;
+    box-shadow: var(--shadow-xl);
+
+    @media (max-width: 768px) {
+      padding: 3rem 2rem;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -50%;
+      left: -10%;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+    }
+
+    .quote-mark {
+      font-size: 5rem;
+      opacity: 0.3;
+      margin-bottom: 1rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .featured-quote {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      color: white;
+      position: relative;
+      z-index: 2;
+
+      @media (max-width: 768px) {
+        font-size: 1.25rem;
+      }
+    }
+
+    .featured-author {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      position: relative;
+      z-index: 2;
+
+      img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid white;
+        object-fit: cover;
+      }
+
+      .author-info {
+        h4 {
+          color: white;
+          margin-bottom: 0.25rem;
+          font-size: 1.25rem;
+        }
+
+        p {
+          color: rgba(255, 255, 255, 0.9);
+          margin-bottom: 0.5rem;
+        }
+
+        .rating {
+          color: #FFD700;
+
+          i {
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Testimonials Page Section
+.testimonials-page-section {
+  padding: 60px 0;
+}
+
+// Testimonials Grid
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Testimonial Card
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    .quote-icon {
+      font-size: 2rem;
+      color: var(--secondary);
+      opacity: 0.3;
+    }
+
+    .rating {
+      color: #FFD700;
+
+      i {
+        margin-left: 2px;
+      }
+    }
+  }
+
+  .testimonial-text {
+    color: var(--text-gray);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+    font-style: italic;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+    }
+
+    .author-info {
+      h4 {
+        margin-bottom: 0.25rem;
+        font-size: 1.1rem;
+        color: var(--text-dark);
+      }
+
+      p {
+        color: var(--text-gray);
+        font-size: 0.875rem;
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Testimonials Stats
+.testimonials-stats {
+  padding: 60px 0;
+  background: var(--bg-creative);
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  .stat-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+
+      @media (max-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+
+    .stat-label {
+      color: var(--text-gray);
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
+
+// CTA Section
+.cta-section {
+  padding: 80px 0;
+
+  .cta-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 4rem;
+    border-radius: var(--radius-2xl);
+    text-align: center;
+    color: white;
+
+    @media (max-width: 768px) {
+      padding: 3rem 2rem;
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 2rem;
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2.5rem;
+      background: white;
+      color: var(--primary);
+      border-radius: var(--radius-full);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+        i {
+          transform: translateX(5px);
+        }
+      }
+
+      i {
+        transition: transform 0.2s ease;
+      }
+    }
+  }
+}
